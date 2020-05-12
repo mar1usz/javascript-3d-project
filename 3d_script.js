@@ -31,6 +31,13 @@ function init() {
   const texture_rt = new THREE.TextureLoader().load('resources/arid2_rt.jpg')
   const texture_lf = new THREE.TextureLoader().load('resources/arid2_lf.jpg')
   
+  texture_ft.anisotropy = renderer.getMaxAnisotropy()
+  texture_bk.anisotropy = renderer.getMaxAnisotropy()
+  texture_up.anisotropy = renderer.getMaxAnisotropy()
+  texture_dn.anisotropy = renderer.getMaxAnisotropy()
+  texture_rt.anisotropy = renderer.getMaxAnisotropy()
+  texture_lf.anisotropy = renderer.getMaxAnisotropy()
+  
   materialArray.push(new THREE.MeshBasicMaterial({ map: texture_ft }))
   materialArray.push(new THREE.MeshBasicMaterial({ map: texture_bk }))
   materialArray.push(new THREE.MeshBasicMaterial({ map: texture_up }))
