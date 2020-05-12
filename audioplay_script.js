@@ -1,3 +1,3 @@
-function audioplay() { 
-    document.getElementById("audiowav").play();
+function audioplay() {
+  document.getElementById("audiowav").play();
 }
