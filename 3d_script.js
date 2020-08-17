@@ -39,10 +39,10 @@ function init() {
   
   for(let i = 0; i < 6; i++)
       materialArray[i].side = THREE.BackSide;
+      
   let skyboxGeo = new THREE.BoxGeometry(10000, 10000, 10000);
   let skybox = new THREE.Mesh(skyboxGeo, materialArray);
   scene.add(skybox);
-  
   animate();
 }
 
