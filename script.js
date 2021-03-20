@@ -1,4 +1,4 @@
-let scene, camera, renderer, controls;
+let scene, camera, renderer;
 
 function init() {
   scene = new THREE.Scene();
@@ -15,9 +15,9 @@ function init() {
     renderer.setSize(WIDTH, HEIGHT);
     camera.aspect = WIDTH / HEIGHT;
     camera.updateProjectionMatrix();
-  })
+  });
 
-  controls = new THREE.OrbitControls(camera, renderer.domElement);
+  let controls = new THREE.OrbitControls(camera, renderer.domElement);
   controls.addEventListener('change', renderer);
   controls.minDistance = 500;
   controls.maxDistance = 1500;
@@ -39,7 +39,6 @@ function init() {
 
   for (let i = 0; i < 6; i++)
     materialArray[i].side = THREE.BackSide;
-
   let skyboxGeo = new THREE.BoxGeometry(10000, 10000, 10000);
   let skybox = new THREE.Mesh(skyboxGeo, materialArray);
   scene.add(skybox);
