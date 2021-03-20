@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="resources/js.png">
 </head>
 
-<body onclick="playBeatAndHideInfo()" ontouchend="playBeatAndHideInfo()">
+<body mousedown="removeInfo()" ontouchstart="removeInfo()" mouseup="playBeat()" ontouchend="playBeat()">
   <audio id="beat" src="resources/210.wav" loop></audio>
   <script src="three.js/three.min.js"></script>
   <script src="three.js/OrbitControls.js"></script>
