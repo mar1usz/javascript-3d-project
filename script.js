@@ -51,7 +51,7 @@ function animate() {
   window.requestAnimationFrame(animate);
 }
 
-function onclick() {
+function playBeatAndHideInfo() {
   document.getElementById('beat').play();
   let info = document.getElementById('info');
   info.remove();
