@@ -51,4 +51,10 @@ function animate() {
   window.requestAnimationFrame(animate);
 }
 
+function onclick() {
+  document.getElementById('beat').play();
+  let info = document.getElementById('info');
+  info.remove();
+}
+
 init();
