@@ -55,9 +55,4 @@ function playBeat() {
   document.getElementById('beat').play();
 }
 
-function removeInfo() {
-  let info = document.getElementById('info');
-  info.remove();
-}
-
 init();
