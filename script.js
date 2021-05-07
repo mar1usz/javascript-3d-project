@@ -10,8 +10,8 @@ function init() {
   document.body.appendChild(renderer.domElement);
 
   window.addEventListener('resize', function () {
-    let WIDTH = window.innerWidth,
-      HEIGHT = window.innerHeight;
+    let WIDTH = window.innerWidth;
+    let HEIGHT = window.innerHeight;
     renderer.setSize(WIDTH, HEIGHT);
     camera.aspect = WIDTH / HEIGHT;
     camera.updateProjectionMatrix();
@@ -38,7 +38,9 @@ function init() {
   materialArray.push(new THREE.MeshBasicMaterial({ map: texture_lf }));
 
   for (let i = 0; i < 6; i++)
+  {
     materialArray[i].side = THREE.BackSide;
+  }
   let skyboxGeo = new THREE.BoxGeometry(10000, 10000, 10000);
   let skybox = new THREE.Mesh(skyboxGeo, materialArray);
   scene.add(skybox);
