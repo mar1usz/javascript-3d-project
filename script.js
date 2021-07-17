@@ -1,6 +1,6 @@
 let scene, camera, renderer;
 
-function init() {
+function initialize() {
   scene = new THREE.Scene();
   camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 45, 30000);
   camera.position.set(-900, -200, -900);
@@ -10,10 +10,10 @@ function init() {
   document.body.appendChild(renderer.domElement);
 
   window.addEventListener('resize', function () {
-    let WIDTH = window.innerWidth;
-    let HEIGHT = window.innerHeight;
-    renderer.setSize(WIDTH, HEIGHT);
-    camera.aspect = WIDTH / HEIGHT;
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+    renderer.setSize(width, height);
+    camera.aspect = width / height;
     camera.updateProjectionMatrix();
   });
 
@@ -55,4 +55,4 @@ function playBeat() {
   document.getElementById('beat').play();
 }
 
-init();
+initialize();
