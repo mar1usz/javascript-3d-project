@@ -9,7 +9,7 @@ function initialize() {
   renderer.setSize(window.innerWidth, window.innerHeight);
   document.body.appendChild(renderer.domElement);
 
-  window.addEventListener('resize', function () {
+  window.addEventListener('resize', () => {
     let width = window.innerWidth;
     let height = window.innerHeight;
     renderer.setSize(width, height);
@@ -52,7 +52,7 @@ function animate() {
 }
 
 function playBeat() {
-  document.getElementById('beat').play();
+  document.querySelector('#beat').play();
 }
 
 initialize();
