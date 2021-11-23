@@ -42,6 +42,7 @@ for (let i = 0; i < 6; i++) {
 let skyboxGeo = new THREE.BoxGeometry(10000, 10000, 10000);
 let skybox = new THREE.Mesh(skyboxGeo, materialArray);
 scene.add(skybox);
+
 animate();
 
 function animate() {
