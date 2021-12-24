@@ -5,4 +5,4 @@ Mini 3D web application in JavaScript (the browser) and three.js:<br/>![image](h
 - https://mariusz96.github.io/javascript-3d-project
 
 ## Acknowledgements:
-- [3d-world-skybox-threejs.zip](3d-world-skybox-threejs.zip?raw=true) by [Red Stapler](https://github.com/theredstapler)
+- [3d-world-skybox-threejs.zip](3d-world-skybox-threejs.zip) by [Red Stapler](https://github.com/theredstapler)
